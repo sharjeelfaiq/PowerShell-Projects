@@ -1,4 +1,4 @@
-Get-ChildItem "D:\" -Recurse | ForEach-Object {
+Get-ChildItem "C:\Users\mrmal\Desktop\New folder" -Recurse | ForEach-Object {
     if ($_.Length -eq 0) {
         Write-Output "Removing Empty Files $($_.FullName)"
         $_.FullName | Remove-item -Force
