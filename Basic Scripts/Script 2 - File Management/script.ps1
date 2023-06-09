@@ -4,7 +4,7 @@ New-Item -Path $directoryPath -ItemType File
 
 # Copy a file to a new location
 $sourceFile = "D:\ABC.txt"
-$destinationFile = "D:\ABC"
+$destinationFile = "D:\ABC\ABC.txt"
 Copy-Item -Path $sourceFile -Destination $destinationFile
 
 # Move a file to a new location
